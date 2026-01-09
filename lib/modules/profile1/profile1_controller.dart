@@ -1,0 +1,11 @@
+import 'package:get_x/get.dart';
+
+class Profile1Controller1 extends GetxController {
+  var name = 'Guest'.obs;
+  var email = 'guest@email.com'.obs;
+
+  void updateProfile() {
+    name.value = 'Moshiur Rahman';
+    email.value = 'moshiurr1299@gmail.com';
+  }
+}
