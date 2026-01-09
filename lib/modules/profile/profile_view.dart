@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get_x/get.dart';
+import 'package:test_ui/modules/screen/login_controller.dart';
 import 'profile_controller.dart';
 
 class ProfileView extends GetView<ProfileController> {
@@ -42,6 +43,13 @@ class ProfileView extends GetView<ProfileController> {
               },
               child: const Text('Update Profile'),
             ),
+
+            //You can use Controller instance directly on GetBuilder value
+            SizedBox(
+              height: 20,
+            ),
+
+            GetBuilder<LoginController>(init: LoginController(),builder: (value) => Text("${value.counter}"),),
           ],
         ),
       ),

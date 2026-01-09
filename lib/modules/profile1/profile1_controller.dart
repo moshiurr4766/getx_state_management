@@ -31,10 +31,10 @@ class Profile1Controller1 extends GetxController {
   void fireRute(bool loggedIn) {
     if (loggedIn) {
       print("✅ User is logged in → Navigate to Dashboard");
-       Get.offAllNamed('/dashboard');
+       Get.toNamed('/dashboard');
     } else {
       print("❌ User is logged out → Navigate to Login");
-       Get.offAllNamed('/login');
+       Get.toNamed('/login');
     }
   }
 
