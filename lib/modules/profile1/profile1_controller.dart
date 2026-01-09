@@ -8,4 +8,8 @@ class Profile1Controller1 extends GetxController {
     name.value = 'Moshiur Rahman';
     email.value = 'moshiurr1299@gmail.com';
   }
+
+  final count1 = 1.obs;
+  final count2 = 0.obs;
+  int get sum => count1.value + count2.value;
 }
