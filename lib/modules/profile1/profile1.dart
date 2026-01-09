@@ -54,6 +54,12 @@ class Profile1View1 extends StatelessWidget {
                 return Text('${controller.sum}');
               },
             ),
+
+            SizedBox(
+              height: 20,
+            ),
+
+            ElevatedButton(onPressed: controller.incrementCopunt, child: Text("Increment Counts")),
           ],
         ),
       ),
