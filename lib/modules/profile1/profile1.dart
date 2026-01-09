@@ -55,11 +55,26 @@ class Profile1View1 extends StatelessWidget {
               },
             ),
 
-            SizedBox(
-              height: 20,
+            SizedBox(height: 20),
+
+            ElevatedButton(
+              onPressed: controller.incrementCopunt,
+              child: Text("Increment Counts"),
             ),
 
-            ElevatedButton(onPressed: controller.incrementCopunt, child: Text("Increment Counts")),
+            SizedBox(height: 20),
+
+            ElevatedButton(
+              onPressed: controller.loggedInUser,
+              child: Text("User Login"),
+            ),
+
+            SizedBox(height: 20),
+
+            ElevatedButton(
+              onPressed: controller.loggedOutUser,
+              child: Text("User Logout"),
+            ),
           ],
         ),
       ),
